@@ -1,27 +1,35 @@
-*{
+* {
     margin: 0;
     border: 0;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-header{
-    display: flex;
-    background: rgba(0, 0, 0, 0.39);
-    position: absolute;  
-    width: 100vw;
-    height: 70px;
-    z-index: 2;
-    justify-content: space-between;
+body {
+    background-color: #020f59;
 }
 
-header > div{
+header {
+    display: flex;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.39) 40%, #00000000 100%); ;
+    position: absolute;
+    width: 100vw;
+    height: 90px;
+    z-index: 2;
+    justify-content: space-between;
+    
+}
+.logo{
+    height: 77.78%;
+}
+
+header>div {
     max-width: 100%;
     display: flex;
     padding: 5px;
     margin: 0 50px;
 }
 
-#header{
+#header {
     height: 100%;
     width: auto;
     display: flex;
@@ -30,42 +38,81 @@ header > div{
 
 .menu {
     list-style: none;
-    display: flex;
+    display: grid;
     margin-right: 100px;
-    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: 70px;
+    column-gap: 40px;
 }
 
-li{
-    margin: 30px;    
+li {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+    line-height: 70px;
+    padding: 0 15px;
 }
 
-li:last-of-type{
-    margin-right: 50px;
-}
-
-.menu li a{
-    color: #F2F2F2; 
-    text-decoration: none; 
+.menu li a {
+    color: #F2F2F2;
+    text-decoration: none;
     height: 100%;
     display: block;
     font-size: 1.5rem;
 }
 
 
-.menu li a:hover{
-    background:#020f59; 
-    color:#fff; 
-    -moz-box-shadow:0 3px 10px 0 #CCC; 
-    -webkit-box-shadow:0 3px 10px 0 #ccc; 
-    text-shadow:0px 0px 5px #fff; 
+.menu li a:hover {
+    background: #020f59;
+    color: #fff;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #fff;
 }
 
-#background{
-
-    width: 100%;
+#background {
+    width: auto;
     height: 100vh;
-    background: linear-gradient(135deg, blue , purple );
-    position: fixed;
     display: flex;
+    background-image: url(Imagem/background1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
     align-items: center;
+}
+
+h2{
+    color: rgba(255, 255, 255, 0.877);
+    width: 40%;
+    margin: auto 10%;
+}
+
+#botões{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 30%;
+}
+
+button{
+    font-size: 1.5rem;
+    width: 80%;
+    height: 70px;
+    background: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+}
+button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+button:last-of-type{
+    margin-top: 20px;
 }
