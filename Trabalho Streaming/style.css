@@ -80,40 +80,48 @@ header>div {
     width: auto;
     height: 100vh;
     display: flex;
+    flex-flow: column;
     background-image: url(Imagem/background1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
     align-items: center;
+    justify-content: center;
 }
 
-h2{
+#tela_inicial h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
     color: rgba(255, 255, 255, 0.877);
-    width: 40%;
-    margin: auto 10%;
+    font-size: 2.7rem;
+    margin: 5% 10% 0 10%;
+    text-align: center;
 }
 
-#botões{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 30%;
+#tela_inicial p{
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
 }
-
-.registro, .login{
+#tela_inicial p span{
     font-size: 1.5rem;
-    width: 80%;
-    height: 70px;
-    background: none;
-    border: 1px solid white;
-    border-radius: 10px;
-    color: white;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    margin-bottom: 30px;
-    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
 }
+
+.registro{
+    border: 2px solid #f2f2f283 !important;
+    padding: 20px 0 !important;
+    font-size: 1.7rem !important;
+    box-shadow: 2px 2px 4px rgba(175, 64, 255, 0.4), 
+                 1px 1px 2px rgba(91, 66, 243, 0.65), 
+                 1px 1px 1px rgba(0, 221, 235, 0.08) !important;
+}
+
+
+
+
 .botao:hover{
     transform: scale(1.05);
     transition: 0.3s;
@@ -231,7 +239,7 @@ h3{
 
 /* botoes dos planos */
 
-.plano_botao {
+.plano_botao, .registro{
   align-items: center;
   background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00ddeb);
   border: 0;
@@ -277,7 +285,7 @@ h3{
 }
 
 @media (min-width: 768px) {
-  .plano_botao {
+  .plano_botao, .registro {
     font-size: 24px;
     min-width: 196px;
   }
