@@ -419,6 +419,10 @@ footer {
 }
 
 @media (max-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+    
     #texto-carrossel{
         margin: 0;
         margin-bottom: 20px;
@@ -433,6 +437,14 @@ footer {
     }
     #tela_inicial{
         font-size: 10px;
+    }
+}
+@media (max-width: 450px){
+    header{
+        font-size: 13px;
+    }
+    .menu{
+        gap: 0;
     }
 }
 
