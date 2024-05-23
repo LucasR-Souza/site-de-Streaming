@@ -388,7 +388,10 @@ footer {
     }
 }
 
-@media (max-width: 780px){
+@media (max-width: 779px){
+    #carrossel_de_imagens{
+        padding: 5vh;
+    }
     #planos{
         display: flex;
         flex-direction: column;
@@ -415,7 +418,12 @@ footer {
     #tela_inicial p span{
         font-size: 1rem;
     }
-
+    .menu{
+        gap: 0;
+        margin-right: 20px;
+        padding-left: 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 500px){
